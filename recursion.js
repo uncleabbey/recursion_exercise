@@ -78,7 +78,8 @@ else
 }
 
 function binarySearch(array, value) {
-    return bSearch(array, value, 0, array.length);
+	let sortedArray = array.sort();
+return bSearch(sortedArray, value, 0, array.length);
 }
 
 function collectStrings(object) {
